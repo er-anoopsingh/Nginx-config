@@ -1,0 +1,17 @@
+server {
+
+  server_name localhost;
+
+  root /var/www/Game-of-Thrones;
+
+  location /{
+     
+     index index.html;
+  
+  } 
+
+  error_page 404 /error/not-found.html;
+
+  error_page 500 /error/internal-error.html;
+
+}
